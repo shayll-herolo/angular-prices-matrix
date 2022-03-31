@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+<div class="container">
+  <div class="horizontal-direction"></div>
+  <div class="matrix-with-vert">
+    <div class="vertical-direction"></div>
+    <div class="matrix-container">
+    <div class="flex" *ngFor="let row of data; let y = index">
+      <app-matric-cell
+        *ngFor="let col of row; let x = index"
+        [data]="col"
+        [xIndex]="x"
+        [yIndex]="y"
+        [selectedCell]="selectedCell"
+        (selectCell)="handleSelectCell($event)"
+      ></app-matric-cell>
+    </div>
+    </div>
+  </div>
+</div>

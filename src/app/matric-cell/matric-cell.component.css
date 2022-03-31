@@ -1,0 +1,29 @@
+:host {
+  width: 100px;
+  height: 50px;
+  border: 1px solid transparent;
+}
+
+:host:hover {
+  border: 1px solid red;
+  background-color: orange;
+}
+
+.matric-cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  border: 1px solid red;
+  background-color: orange;
+}
+
+.highlighted {
+  border: 1px solid blue;
+  background-color: greenyellow;
+}

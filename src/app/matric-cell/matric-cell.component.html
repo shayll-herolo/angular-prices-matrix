@@ -1,0 +1,13 @@
+<div
+  class="matric-cell"
+  [ngClass]="{
+    selected:
+      xIndex === selectedCell?.xIndex && yIndex === selectedCell?.yIndex,
+    highlighted:
+      (xIndex === selectedCell?.xIndex && yIndex < selectedCell?.yIndex) ||
+      (yIndex === selectedCell?.yIndex && xIndex < selectedCell?.xIndex)
+  }"
+  (click)="handleCellClick()"
+>
+  {{ data }}
+</div>
