@@ -4,7 +4,6 @@ p {
 
 .flex {
   display: flex;
-  flex: 500;
 }
 
 .container {
@@ -26,7 +25,7 @@ p {
   background-color: aquamarine;
 }
 .vertical-direction {
-  height: 431px;
+  height: auto;
   width: 15px;
   background-color: blue;
 }
